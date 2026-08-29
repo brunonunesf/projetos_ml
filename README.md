@@ -8,6 +8,7 @@ pasta contém um exemplo independente e um README com os detalhes do projeto.
 | Tema | Descrição | Técnicas |
 | --- | --- | --- |
 | [Classificação](./classificacao/) | Prevê se um projeto será finalizado com base no preço e nas horas esperadas. | SVM linear, divisão treino/teste e acurácia |
+| [Clusterização](./clusterizacao/) | Segmenta consumidores em grupos com interesses e características semelhantes. | K-Means, normalização, método do cotovelo e silhueta |
 | [Regressão linear](./regressao-linear/) | Estima a geração de energia de uma usina e analisa a qualidade do modelo. | OLS, R², VIF e análise de resíduos |
 
 ## Como executar
@@ -19,6 +20,7 @@ python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 python classificacao/main.py
+python clusterizacao/main.py
 python regressao-linear/main.py
 ```
 
@@ -31,6 +33,10 @@ projetos_ml/
 ├── classificacao/
 │   ├── README.md
 │   └── main.py
+├── clusterizacao/
+│   ├── dados_mkt.csv
+│   ├── main.py
+│   └── novas_entradas.csv
 ├── regressao-linear/
 │   ├── README.md
 │   ├── main.py
